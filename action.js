@@ -1,0 +1,1 @@
+let text=document.getElementById("texts");text.focus();let displayResult=document.getElementById("displayText");text.addEventListener("input",function(){let t=this.value,e=t.length;t=t.trim(),console.log(t);let l=t.split(" ");console.log(l),l=l.filter(function(t){return""!=t}),console.log(l);let n=l.length;displayResult.innerHTML=`${n} Words ${e} Characters`});
